@@ -1,0 +1,47 @@
+mysqldb
+dbadmin
+adminpwd
+
+mysqldb.ctx7fv86dzks.us-east-1.rds.amazonaws.com:3306
+
+mysql -h mysqldb.ctx7fv86dzks.us-east-1.rds.amazonaws.com -P 3306 -u dbadmin -p
+
+
+https://dev.mysql.com/doc/mysql-installation-excerpt/5.6/en/linux-installation-yum-repo.html
+
+sudo yum update
+sudo yum localinstall mysql57-community-release-el7-11.noarch.rpm
+sudo yum install mysql mysql-server
+sudo yum install mysql-community-server
+sudo service mysqld start
+sudo service mysqld status
+mysql_secure_installation
+
+mysqldb
+admin
+adminpwd
+
+sudo yum install mysql-community-server --skip-broken
+
+-----------------------------------------------------------------------
+sudo yum install wget
+
+wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm
+
+sudo rpm -ivh mysql57-community-release-el7-11.noarch.rpm
+
+sudo yum install mysql-server
+
+sudo service mysqld start
+
+sudo service mysqld status
+
+-----------------------------------------------------------------------
+
+IDentifier: mysqldb
+masteruser
+masterpwd
+
+mysqldb.ctx7fv86dzks.us-east-1.rds.amazonaws.com
+
+mysql -h mysqldb.ctx7fv86dzks.us-east-1.rds.amazonaws.com -P 3306 -u masteruser -p

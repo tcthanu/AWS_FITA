@@ -1,0 +1,3 @@
+https://gist.github.com/bkozora/724e01903a9ad481d21e
+
+NOTE: Just remember IAM Role to give access to EC2 operations

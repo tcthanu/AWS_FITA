@@ -1,0 +1,11 @@
+sudo mkdir /mountvol
+sudo mount /dev/sdf /mountvol/
+
+-- Format the block
+sudo mkfs –t ext3 /dev/sdf
+sudo mkfs -t ext4 /dev/sdf
+
+sudo mount /dev/sdf /mountvol/
+
+--Block resize
+sudo resize2fs /dev/sdf

@@ -1,0 +1,26 @@
+-- Installing Apache
+
+sudo yum -y install httpd mod_ssl
+
+-- Start Apache
+
+sudo /etc/init.d/httpd start
+sudo /etc/init.d/httpd status
+sudo service httpd status
+sudo service httpd start
+
+--Create sample HTML Page
+
+sudo vi /var/www/html/index.html
+
+
+-- EC2 Default Usernames
+
+https://alestic.com/2014/01/ec2-ssh-username/
+
+--Apache Error Log
+
+sudo tail -f /var/log/httpd/error_log
+
+chkconfig --list
+sudo chkconfig --level 0123456 httpd on
